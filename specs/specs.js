@@ -11,5 +11,7 @@ describe ('triangle', function() {
   it("should return 'not a triangle' when at least 1 length inputted is at least as long as the other 2 combined", function() {
     triangle(2, 2, 8).should.equal("not a triangle");
   });
-
+  it("should return 'not a triangle' when anything other than numbers are inputted", function() {
+    triangle("a", 6, "r").should.equal("not a triangle");
+  });
 });

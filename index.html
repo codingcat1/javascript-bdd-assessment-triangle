@@ -3,25 +3,34 @@
   <head>
 	<link href="css/bootstrap.css" ref="stylesheet" type="text/css">
 	<link href="css/styles.css" ref="stylesheet" type="text/css">
-	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<title>Triangle</title>
   </head>
   <body>
     <div class="container">
-	<h1>Triangle</h1>
-	<form id="triangle">
-	  <div class="form-group">
-	    <label for="side1"> Side 1: </label>
-        <input id="side1" type="text" class="form-control" size="10">
-        <label for="side2"> Side 2: </label>
-        <input id="side2" type="text" class="form-control" size="10">
-        <label for="side3"> Side 3: </label>
-        <input id="side3" type="text" class="form-control" size="10">		
+	  <h1>Triangle</h1>
+	  <h4>Enter the lengths of your triangle to find out whether it is Equilateral, Isosceles, Scalene or not a triangle at all!</h4>
+	  <form id="triangle">
+	    <div class="form-group">
+	      <label for="side1"> Side 1: </label>
+          <input id="side1" type="text" class="form-control" size="10">
+		  <br>
+		  <br>
+          <label for="side2"> Side 2: </label>
+          <input id="side2" type="text" class="form-control" size="10">
+		  <br>
+		  <br>
+          <label for="side3"> Side 3: </label>
+          <input id="side3" type="text" class="form-control" size="10">		
+	    </div>
+	    <br>
+	    <button type="submit" class="btn btn-primary">What kind of Triangle is it?!</button>
+	  </form>
+	
+	  <div id="result">
+	    <p>Awesome! You've entered the lengths of the <span class="triangle"></span> triangle!</p>
 	  </div>
-	  <br>
-	  <button type="submit" class="btn btn-primary">What kind of Triangle is it?!</button>
-	</form>
-	</div>
+	</div>  
   </body>
 </html>
